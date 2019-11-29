@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/11/28 22:10:19.124.pas,C:\Users\Gustavo\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\Gustavo\Documents\RAD Studio\Projects\Ordem de servico\Uprincipal.pas</Transaction>
+    <Transaction>2019/11/28 22:10:19.124.dfm,C:\Users\Gustavo\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\Gustavo\Documents\RAD Studio\Projects\Ordem de servico\Uprincipal.dfm</Transaction>
+    <Transaction>2019/11/28 22:10:52.614.dproj,C:\Users\Gustavo\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\Gustavo\Documents\RAD Studio\Projects\Ordem de servico\Project1.dproj</Transaction>
+    <Transaction>2019/11/28 22:11:18.746.dproj,C:\Users\Gustavo\Documents\RAD Studio\Projects\Ordem de servico\Project1.dproj=C:\Users\Gustavo\Documents\RAD Studio\Projects\Ordem de servico\Ordem_de_servico.dproj</Transaction>
+    <Transaction>2019/11/29 11:07:42.606.pas,C:\Users\Gustavo\Documents\RAD Studio\Projects\Ordem de servico\Unit1.pas=C:\Users\Gustavo\Documents\RAD Studio\Projects\Ordem de servico\UTabelas.pas</Transaction>
+    <Transaction>2019/11/29 11:07:42.606.dfm,C:\Users\Gustavo\Documents\RAD Studio\Projects\Ordem de servico\Unit1.dfm=C:\Users\Gustavo\Documents\RAD Studio\Projects\Ordem de servico\UTabelas.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
