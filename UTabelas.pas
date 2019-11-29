@@ -41,6 +41,30 @@ type
     ClientOSDATA_FINALIZACAO: TDateField;
     ClientOSCLIENTE: TStringField;
     ClientOSVEICULOS: TStringField;
+    SQLVEICULOS: TSQLDataSet;
+    DataSetVEICULOS: TDataSetProvider;
+    ClientVEICULOS: TClientDataSet;
+    SQLVEICULOSID_VEICULO: TIntegerField;
+    SQLVEICULOSDESCRICAO: TStringField;
+    SQLVEICULOSKM: TStringField;
+    SQLVEICULOSID_CLIENTE: TIntegerField;
+    SQLVEICULOSID_OS: TIntegerField;
+    ClientVEICULOSID_VEICULO: TIntegerField;
+    ClientVEICULOSDESCRICAO: TStringField;
+    ClientVEICULOSKM: TStringField;
+    ClientVEICULOSID_CLIENTE: TIntegerField;
+    ClientVEICULOSID_OS: TIntegerField;
+    DSVEICULOS: TDataSource;
+    SQLPROBLEMA: TSQLDataSet;
+    SQLPROBLEMAID_PROBLEMA: TIntegerField;
+    SQLPROBLEMADESCRICAO: TStringField;
+    SQLPROBLEMAID_OS: TIntegerField;
+    DataSetPROBLEMA: TDataSetProvider;
+    ClientPROBLEMA: TClientDataSet;
+    ClientPROBLEMAID_PROBLEMA: TIntegerField;
+    ClientPROBLEMADESCRICAO: TStringField;
+    ClientPROBLEMAID_OS: TIntegerField;
+    DSPROB: TDataSource;
   private
     { Private declarations }
   public

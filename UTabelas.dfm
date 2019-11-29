@@ -1,6 +1,6 @@
 object DM: TDM
   OldCreateOrder = False
-  Height = 395
+  Height = 511
   Width = 596
   object SQLConnection1: TSQLConnection
     ConnectionName = 'FBConnection'
@@ -169,5 +169,115 @@ object DM: TDM
     DataSet = ClientOS
     Left = 384
     Top = 232
+  end
+  object SQLVEICULOS: TSQLDataSet
+    SchemaName = 'sysdba'
+    Active = True
+    CommandText = 'select  * from VEICULOS'
+    DbxCommandType = 'Dbx.SQL'
+    MaxBlobSize = -1
+    Params = <>
+    SQLConnection = SQLConnection1
+    Left = 72
+    Top = 312
+    object SQLVEICULOSID_VEICULO: TIntegerField
+      FieldName = 'ID_VEICULO'
+    end
+    object SQLVEICULOSDESCRICAO: TStringField
+      FieldName = 'DESCRICAO'
+      Size = 80
+    end
+    object SQLVEICULOSKM: TStringField
+      FieldName = 'KM'
+    end
+    object SQLVEICULOSID_CLIENTE: TIntegerField
+      FieldName = 'ID_CLIENTE'
+    end
+    object SQLVEICULOSID_OS: TIntegerField
+      FieldName = 'ID_OS'
+    end
+  end
+  object DataSetVEICULOS: TDataSetProvider
+    DataSet = SQLVEICULOS
+    Left = 176
+    Top = 312
+  end
+  object ClientVEICULOS: TClientDataSet
+    Active = True
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'DataSetVEICULOS'
+    Left = 296
+    Top = 312
+    object ClientVEICULOSID_VEICULO: TIntegerField
+      FieldName = 'ID_VEICULO'
+    end
+    object ClientVEICULOSDESCRICAO: TStringField
+      FieldName = 'DESCRICAO'
+      Size = 80
+    end
+    object ClientVEICULOSKM: TStringField
+      FieldName = 'KM'
+    end
+    object ClientVEICULOSID_CLIENTE: TIntegerField
+      FieldName = 'ID_CLIENTE'
+    end
+    object ClientVEICULOSID_OS: TIntegerField
+      FieldName = 'ID_OS'
+    end
+  end
+  object DSVEICULOS: TDataSource
+    DataSet = ClientVEICULOS
+    Left = 408
+    Top = 312
+  end
+  object SQLPROBLEMA: TSQLDataSet
+    SchemaName = 'sysdba'
+    Active = True
+    CommandText = 'select *  from PROBLEMA'
+    DbxCommandType = 'Dbx.SQL'
+    MaxBlobSize = -1
+    Params = <>
+    SQLConnection = SQLConnection1
+    Left = 72
+    Top = 384
+    object SQLPROBLEMAID_PROBLEMA: TIntegerField
+      FieldName = 'ID_PROBLEMA'
+    end
+    object SQLPROBLEMADESCRICAO: TStringField
+      FieldName = 'DESCRICAO'
+      Size = 700
+    end
+    object SQLPROBLEMAID_OS: TIntegerField
+      FieldName = 'ID_OS'
+    end
+  end
+  object DataSetPROBLEMA: TDataSetProvider
+    DataSet = SQLPROBLEMA
+    Left = 184
+    Top = 384
+  end
+  object ClientPROBLEMA: TClientDataSet
+    Active = True
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'DataSetPROBLEMA'
+    Left = 296
+    Top = 384
+    object ClientPROBLEMAID_PROBLEMA: TIntegerField
+      FieldName = 'ID_PROBLEMA'
+    end
+    object ClientPROBLEMADESCRICAO: TStringField
+      FieldName = 'DESCRICAO'
+      Size = 700
+    end
+    object ClientPROBLEMAID_OS: TIntegerField
+      FieldName = 'ID_OS'
+    end
+  end
+  object DSPROB: TDataSource
+    DataSet = ClientPROBLEMA
+    Left = 400
+    Top = 376
   end
 end
