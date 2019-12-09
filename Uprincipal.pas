@@ -98,6 +98,11 @@ type
     SpeedButton5: TSpeedButton;
     SpeedButton6: TSpeedButton;
     DBNavigator1: TDBNavigator;
+    TabSheet8: TTabSheet;
+    DBGrid3: TDBGrid;
+    Label32: TLabel;
+    Label33: TLabel;
+    DBText1: TDBText;
     procedure Button1Click(Sender: TObject);
     procedure BitBtn3Click(Sender: TObject);
     procedure BitBtn8Click(Sender: TObject);

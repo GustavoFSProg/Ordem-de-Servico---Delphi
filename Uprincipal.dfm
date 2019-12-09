@@ -1329,12 +1329,13 @@ object Fprincipal: TFprincipal
       object PageControl2: TPageControl
         Left = 8
         Top = 8
-        Width = 709
+        Width = 769
         Height = 513
-        ActivePage = TabSheet7
+        ActivePage = TabSheet8
         TabOrder = 0
         object TabSheet7: TTabSheet
           Caption = 'Cadastrar Pagamento'
+          ExplicitWidth = 701
           object Label26: TLabel
             Left = 32
             Top = 32
@@ -1625,6 +1626,95 @@ object Fprincipal: TFprincipal
             ParentShowHint = False
             ShowHint = True
             TabOrder = 6
+          end
+        end
+        object TabSheet8: TTabSheet
+          Caption = 'Detalhes'
+          ImageIndex = 1
+          ExplicitWidth = 701
+          object Label32: TLabel
+            Left = 34
+            Top = 32
+            Width = 92
+            Height = 25
+            Caption = 'Detalhes'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -21
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object Label33: TLabel
+            Left = 40
+            Top = 80
+            Width = 260
+            Height = 18
+            Caption = 'Condi'#231#227'o de pagamento escolhida: '
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -15
+            Font.Name = 'Tahoma'
+            Font.Style = [fsBold]
+            ParentFont = False
+          end
+          object DBText1: TDBText
+            Left = 314
+            Top = 82
+            Width = 79
+            Height = 17
+            DataField = 'FORMA_PAGAMENTO'
+            DataSource = DM.DSPAGTO
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+          end
+          object DBGrid3: TDBGrid
+            Left = 24
+            Top = 112
+            Width = 705
+            Height = 361
+            DataSource = DM.DSPAGTO
+            TabOrder = 0
+            TitleFont.Charset = DEFAULT_CHARSET
+            TitleFont.Color = clWindowText
+            TitleFont.Height = -11
+            TitleFont.Name = 'Tahoma'
+            TitleFont.Style = []
+            Columns = <
+              item
+                Expanded = False
+                FieldName = 'PARCELA'
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'VALOR'
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'TAXA'
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'VALOR_FINAL'
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'FORMA_PAGAMENTO'
+                Visible = True
+              end
+              item
+                Expanded = False
+                FieldName = 'VENCIMENTOS'
+                Visible = True
+              end>
           end
         end
       end
